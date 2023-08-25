@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Meu App'),
     );
   }
 }
@@ -108,9 +108,10 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
               style: TextStyle(
-                  color: Colors.blueAccent,
+                  color: Colors.white70,
                   fontSize: 17,
-                  backgroundColor: Colors.amber),
+                  fontStyle: FontStyle.italic,
+                  backgroundColor: Colors.black54),
             ),
             Text(
               '$_counter',
@@ -122,7 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        backgroundColor: Colors.blueAccent,
+        child: const Icon(Icons.add_card_sharp),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
